@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HackFiesta 3.0 | Event Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="icon" href="images/svg/{HackFiesta}.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Barlow%7CBarlow+Condensed:300,400,500,600,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+       
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+
+        .gallery-item {
+            overflow: hidden; 
+            transition: transform 0.3s;
+        }
+
+       
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s; 
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05); 
+        }
+
+        .section-header {
+            text-align: center;
+            padding: 30px 0;
+            padding-top: 60px; 
+        }
+
+        .footer-classic {
+            background-color: #333; 
+            color: white; 
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="section page-header">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="index.html"><img class="brand-logo-light" src="images/svg/{HackFiesta}.svg" style="height: 50px;" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <ul class="rd-navbar-nav">
+
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#about"
+                                                style="color: #212121;">About</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html" style=color:#212121;>Home</a></li>
+                                        
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="project.html"
+                                            style="color: #212121;">Projects</a>
+                                       </li>
+                                        
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#sponsor"
+                                                style="color: #212121;">Sponsor</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#faq"
+                                                style="color: #212121;">RULES</a>
+                                        </li>
+                                        
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#contact"
+                                                style="color: #212121;">Contact</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html"
+                                            style="color: #212121;">Gallery</a>
+                                    </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="section-header">
+            <h2>Event Gallery</h2>
+            <p>Relive the moments from HackFiesta 3.0!</p>
+        </div>
+
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/hackathon/2.jpg" alt="Event Photo 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/1.jpg" alt="Event Photo 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/3.jpg" alt="Event Photo 3">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/7.jpg" alt="Event Photo 4">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/8.jpg" alt="Event Photo 5">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/10.jpg" alt="Event Photo 6">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/4.jpg" alt="Event Photo 7">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/5.jpg" alt="Event Photo 8">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/9.jpg" alt="Event Photo 9">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hackathon/6.jpg" alt="Event Photo 10">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-classic">
+        <p>&copy; 2024 HackFiesta. All rights reserved.</p>
+    </div>
+
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
